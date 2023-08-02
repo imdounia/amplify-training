@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "mylambda",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read"
+        ]
+      }
+    },
+    "/sendmail": {
+      "name": "/sendmail",
+      "lambdaFunction": "lambdaAddJobMail",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

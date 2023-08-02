@@ -1,0 +1,12 @@
+{
+  "resourceName": "dynamoContent",
+  "tableName": "dynamoContent",
+  "partitionKey": {
+    "fieldName": "comment",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "dynamoContentTrigger83420cf1"
+  ]
+}
