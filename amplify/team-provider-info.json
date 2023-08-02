@@ -33,7 +33,7 @@
         },
         "lambdaAddJobMail": {
           "deploymentBucketName": "amplify-amplify-dev-101415-deployment",
-          "s3Key": "amplify-builds/lambdaAddJobMail-765a526a466d7a49546a-build.zip"
+          "s3Key": "amplify-builds/lambdaAddJobMail-7668422b625569596565-build.zip"
         }
       },
       "api": {

@@ -69,19 +69,20 @@ function App({ signOut, user }) {
     fetchApiData();
   }, [])
 
-  const handleChange = (event) => {
-    setMessage(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setMessage(event.target.value);
+  // };
 
   const handleSendMessage = async () => {
     try {
       // Call the API endpoint (Lambda function)
-      const response = await API.post('apiamplify', '/sendmail', {
+      await API.post('apiamplify', '/sendmail', {
         body: {
           message: message,
         },
       });
-      console.log('Message sent to DynamoDB:', response);
+      console.log('Message sent to DynamoDB:');
+      setMessage('');
       // Optionally, you can show a success message to the user or perform other actions after sending the message
     } catch (error) {
       console.error('Error sending message:', error);
@@ -120,15 +121,15 @@ return (
             <pre>
               {fileList.join("\n")}
             </pre>
-
+           </div>
+           
+        )}
+                   
             <h2>Write a message:</h2>
-            <textarea value={message} onChange={handleChange}></textarea>
+            <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
             <button style={styles.button} onClick={handleSendMessage}>
               Send message content to Dynamo
             </button>
-          </div>
-        )}
-        
         
     </div>
   )
