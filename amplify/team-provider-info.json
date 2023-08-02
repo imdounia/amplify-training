@@ -29,7 +29,7 @@
         },
         "dynamoContentTrigger83420cf1": {
           "deploymentBucketName": "amplify-amplify-dev-101415-deployment",
-          "s3Key": "amplify-builds/dynamoContentTrigger83420cf1-6c4130474c7632364c4c-build.zip"
+          "s3Key": "amplify-builds/dynamoContentTrigger83420cf1-4232634c346f4f495a6b-build.zip"
         },
         "lambdaAddJobMail": {
           "deploymentBucketName": "amplify-amplify-dev-101415-deployment",
